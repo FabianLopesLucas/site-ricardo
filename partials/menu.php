@@ -8,7 +8,7 @@
 
 					<div class="nav-outer d-flex align-items-center flex-wrap">
 						<div class="logo-box">
-							<div class="logo"><a href="index"><img src="assets/images/logo.svg" alt="" title=""></a></div>
+							<div class="logo"><a href="index.php"><img src="assets/images/logo.svg" alt="" title=""></a></div>
 						</div>
 						<!-- Main Menu -->
 						<nav class="main-menu navbar-expand-md">
