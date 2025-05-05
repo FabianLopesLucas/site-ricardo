@@ -11,5 +11,3 @@ RUN chown -R www-data:www-data /var/www/html \
 # Habilita módulos do Apache se necessário
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-# Expondo a porta padrão do Apache
-EXPOSE 80
