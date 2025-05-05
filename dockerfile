@@ -8,6 +8,11 @@ COPY . /var/www/html/
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
 
-# Habilita módulos do Apache se necessário
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+# Habilita o mod_rewrite
+RUN a2enmod rewrite
 
+# Permite que o Apache use .htaccess
+RUN sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
+
+# Instala extensões PHP
+RUN docker-php-ext-install mysqli pdo pdo_mysql
